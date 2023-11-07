@@ -4,6 +4,7 @@ import useScrollTop from "@/hooks/useScrollTop";
 import React from "react";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
+import { ModeToggle } from "@/components/shared/ModeToggle";
 
 type Props = {};
 
@@ -19,6 +20,7 @@ const Navbar = (props: Props) => {
       <Logo />
       <div className="flex w-full items-center justify-between gap-x-2 md:ml-auto md:justify-end">
         Login
+        <ModeToggle />
       </div>
     </div>
   );
