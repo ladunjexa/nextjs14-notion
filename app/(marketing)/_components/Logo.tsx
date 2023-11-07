@@ -17,7 +17,7 @@ const Logo = (props: Props) => {
         alt="logo"
         className="dark:invert-white"
       />
-      <p className={cn("font-semibold", poppins.className)}>Jotion</p>
+      <p className={cn("font-semibold", poppins.className)}>Notion</p>
     </div>
   );
 };

@@ -26,7 +26,7 @@ export default function MainLayout({
   }
 
   return (
-    <div className="dar:bg-[#1F1F1F] flex h-full">
+    <div className="flex h-full dark:bg-[#1F1F1F]">
       <Navigation />
       <main className="h-full flex-1 overflow-y-auto">{children}</main>
     </div>

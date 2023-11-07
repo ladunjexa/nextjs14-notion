@@ -11,7 +11,13 @@ const Heroes = (props: Props) => {
           <Image
             src="/assets/images/documents.png"
             fill
-            className="object-contain"
+            className="object-contain dark:hidden"
+            alt="documents"
+          />
+          <Image
+            src="/assets/images/documents-dark.png"
+            fill
+            className="hidden object-contain dark:block"
             alt="documents"
           />
         </div>

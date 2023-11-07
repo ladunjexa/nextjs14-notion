@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useRef, ElementRef, useState, useEffect } from "react";
-import { ChevronLeft, MenuIcon } from "lucide-react";
+import { ChevronsLeft, MenuIcon } from "lucide-react";
 
 import { useMediaQuery } from "usehooks-ts";
 import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
+import UserSettings from "./UserSettings";
 
 type Props = {};
 
@@ -118,10 +119,10 @@ const Navigation = (props: Props) => {
             isMobile && "opacity-100"
           )}
         >
-          <ChevronLeft className="h-6 w-6" />
+          <ChevronsLeft className="h-6 w-6" />
         </div>
         <div>
-          <p>Action items</p>
+          <UserSettings />
         </div>
         <div className="mt-4">
           <p>Documents</p>
