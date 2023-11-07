@@ -15,7 +15,7 @@ import { useMediaQuery } from "usehooks-ts";
 import { usePathname } from "next/navigation";
 import { useMutation } from "convex/react";
 import { cn } from "@/lib/utils";
-import UserSettings from "./UserSettings";
+import UserItem from "./UserItem";
 import { api } from "@/convex/_generated/api";
 import Item from "./Item";
 import { toast } from "sonner";
@@ -27,6 +27,7 @@ import {
 } from "@/components/ui/popover";
 import TrashBox from "./TrashBox";
 import { useSearch } from "@/hooks/useSearch";
+import { useSettings } from "@/hooks/useSettings";
 
 type Props = {};
 
@@ -34,6 +35,7 @@ const Navigation = (props: Props) => {
   const pathname = usePathname();
   const isMobile = useMediaQuery("(max-width: 768px)");
   const search = useSearch();
+  const settings = useSettings();
   const create = useMutation(api.documents.create);
 
   const isResizingRef = useRef(false);
@@ -155,9 +157,9 @@ const Navigation = (props: Props) => {
           <ChevronsLeft className="h-6 w-6" />
         </div>
         <div>
-          <UserSettings />
+          <UserItem />
           <Item label="Search" icon={Search} onClick={search.onOpen} isSearch />
-          <Item label="Settings" icon={Settings} onClick={() => {}} />
+          <Item label="Settings" icon={Settings} onClick={settings.onOpen} />
           <Item label="New page" icon={PlusCircle} onClick={handleCreate} />
         </div>
         <div className="mt-4">

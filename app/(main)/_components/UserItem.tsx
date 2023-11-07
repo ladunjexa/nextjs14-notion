@@ -16,7 +16,7 @@ import {
 
 type Props = {};
 
-const UserSettings = (props: Props) => {
+const UserItem = (props: Props) => {
   const { user } = useUser();
 
   return (
@@ -72,4 +72,4 @@ const UserSettings = (props: Props) => {
   );
 };
 
-export default UserSettings;
+export default UserItem;
