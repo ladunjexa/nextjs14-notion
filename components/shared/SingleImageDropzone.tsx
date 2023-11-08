@@ -75,6 +75,7 @@ const SingleImageDropzone = React.forwardRef<HTMLInputElement, InputProps>(
       onDrop: (acceptedFiles) => {
         const file = acceptedFiles[0];
         if (file) {
+          // eslint-disable-next-line no-void
           void onChange?.(file);
         }
       },
@@ -142,6 +143,7 @@ const SingleImageDropzone = React.forwardRef<HTMLInputElement, InputProps>(
 
           {imageUrl ? (
             // Image Preview
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               className="h-full w-full rounded-md object-cover"
               src={imageUrl}
@@ -161,6 +163,7 @@ const SingleImageDropzone = React.forwardRef<HTMLInputElement, InputProps>(
               className="group absolute right-0 top-0 -translate-y-1/4 translate-x-1/4"
               onClick={(e) => {
                 e.stopPropagation();
+                // eslint-disable-next-line no-void
                 void onChange?.(undefined);
               }}
             >
