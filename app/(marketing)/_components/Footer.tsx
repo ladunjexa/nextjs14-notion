@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "./Logo";
+import { Logo } from "./Logo";
 import { Button } from "@/components/ui/button";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div className="z-50 flex w-full items-center bg-background p-6 dark:bg-[#1F1F1F]">
       <Logo />
@@ -17,5 +17,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

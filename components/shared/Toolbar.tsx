@@ -15,7 +15,7 @@ interface ToolbarProps {
   preview?: boolean;
 }
 
-const Toolbar = ({ initialData, preview }: ToolbarProps) => {
+export const Toolbar = ({ initialData, preview }: ToolbarProps) => {
   const inputRef = useRef<ElementRef<"textarea">>(null);
 
   const [isEditing, setIsEditing] = useState(false);
@@ -135,5 +135,3 @@ const Toolbar = ({ initialData, preview }: ToolbarProps) => {
     </div>
   );
 };
-
-export default Toolbar;

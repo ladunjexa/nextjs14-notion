@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import React from "react";
 import { useConvexAuth } from "convex/react";
-import Spinner from "@/components/shared/Spinner";
+import { Spinner } from "@/components/shared/Spinner";
 import Link from "next/link";
 import { SignInButton } from "@clerk/clerk-react";
 import Image from "next/image";
 
-const Heading = () => {
+export const Heading = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   return (
     <div className="max-w-3xl space-y-4">
@@ -78,5 +78,3 @@ const Heading = () => {
     </div>
   );
 };
-
-export default Heading;

@@ -15,22 +15,22 @@ import { useMediaQuery } from "usehooks-ts";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { useMutation } from "convex/react";
 import { cn } from "@/lib/utils";
-import UserItem from "./UserItem";
+import { UserItem } from "./UserItem";
 import { api } from "@/convex/_generated/api";
-import Item from "./Item";
+import { Item } from "./Item";
 import { toast } from "sonner";
-import DocumentList from "./DocumentList";
+import { DocumentList } from "./DocumentList";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import TrashBox from "./TrashBox";
+import { TrashBox } from "./TrashBox";
 import { useSearch } from "@/hooks/useSearch";
 import { useSettings } from "@/hooks/useSettings";
-import Navbar from "./Navbar";
+import { Navbar } from "./Navbar";
 
-const Navigation = () => {
+export const Navigation = () => {
   const router = useRouter();
   const params = useParams();
   const pathname = usePathname();
@@ -210,5 +210,3 @@ const Navigation = () => {
     </>
   );
 };
-
-export default Navigation;

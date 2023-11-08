@@ -7,7 +7,7 @@ import { Label } from "../ui/label";
 import { useSettings } from "@/hooks/useSettings";
 import { ModeToggle } from "../shared/ModeToggle";
 
-const SettingsModal = () => {
+export const SettingsModal = () => {
   const settings = useSettings();
 
   return (
@@ -29,5 +29,3 @@ const SettingsModal = () => {
     </Dialog>
   );
 };
-
-export default SettingsModal;

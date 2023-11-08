@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-import SettingsModal from "@/components/modals/SettingsModal";
+import { SettingsModal } from "@/components/modals/SettingsModal";
 import { CoverImageModal } from "../modals/CoverImageModal";
 
 export function ModalProvider() {

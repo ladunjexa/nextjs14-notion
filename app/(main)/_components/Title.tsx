@@ -12,7 +12,7 @@ type TitleProps = {
   initialData: Doc<"documents">;
 };
 
-const Title = ({ initialData }: TitleProps) => {
+export const Title = ({ initialData }: TitleProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const update = useMutation(api.documents.update);
 
@@ -76,5 +76,3 @@ const Title = ({ initialData }: TitleProps) => {
 Title.Skeleton = function TitleSkeleton() {
   return <Skeleton className="h-6 w-20 rounded-md" />;
 };
-
-export default Title;

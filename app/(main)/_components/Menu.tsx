@@ -20,7 +20,7 @@ interface MenuProps {
   documentId: Id<"documents">;
 }
 
-const Menu = ({ documentId }: MenuProps) => {
+export const Menu = ({ documentId }: MenuProps) => {
   const router = useRouter();
   const { user } = useUser();
 
@@ -66,5 +66,3 @@ const Menu = ({ documentId }: MenuProps) => {
 Menu.Skeleton = function MenuSkeleton() {
   return <Skeleton className="h-10 w-10" />;
 };
-
-export default Menu;

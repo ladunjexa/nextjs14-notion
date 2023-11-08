@@ -2,9 +2,9 @@
 
 import React from "react";
 import { useConvexAuth } from "convex/react";
-import Spinner from "@/components/shared/Spinner";
+import { Spinner } from "@/components/shared/Spinner";
 import { redirect } from "next/navigation";
-import Navigation from "./_components/Navigation";
+import { Navigation } from "./_components/Navigation";
 import SearchCommand from "@/components/shared/SearchCommand";
 
 export default function MainLayout({

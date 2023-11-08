@@ -3,15 +3,15 @@
 import useScrollTop from "@/hooks/useScrollTop";
 import React from "react";
 import { cn } from "@/lib/utils";
-import Logo from "./Logo";
+import { Logo } from "./Logo";
 import { ModeToggle } from "@/components/shared/ModeToggle";
 import { useConvexAuth } from "convex/react";
 import { SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
 import { Button } from "@/components/ui/button";
-import Spinner from "@/components/shared/Spinner";
+import { Spinner } from "@/components/shared/Spinner";
 import Link from "next/link";
 
-const Navbar = () => {
+export const Navbar = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   const scrolled = useScrollTop();
   return (
@@ -50,5 +50,3 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;

@@ -5,7 +5,7 @@ import { Doc, Id } from "@/convex/_generated/dataModel";
 import { useQuery } from "convex/react";
 import { useParams, useRouter } from "next/navigation";
 import React, { useState } from "react";
-import Item from "./Item";
+import { Item } from "./Item";
 import { cn } from "@/lib/utils";
 import { FileIcon } from "lucide-react";
 
@@ -15,7 +15,10 @@ interface DocumentListProps {
   data?: Doc<"documents">[];
 }
 
-const DocumentList = ({ parentDocumentId, level = 0 }: DocumentListProps) => {
+export const DocumentList = ({
+  parentDocumentId,
+  level = 0,
+}: DocumentListProps) => {
   const params = useParams();
   const router = useRouter();
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
@@ -84,5 +87,3 @@ const DocumentList = ({ parentDocumentId, level = 0 }: DocumentListProps) => {
     </>
   );
 };
-
-export default DocumentList;

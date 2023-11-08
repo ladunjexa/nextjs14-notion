@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"] });
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <div className="hidden items-center gap-x-2 md:flex">
       <Image
@@ -19,5 +19,3 @@ const Logo = () => {
     </div>
   );
 };
-
-export default Logo;

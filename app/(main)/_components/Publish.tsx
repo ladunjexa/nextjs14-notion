@@ -7,7 +7,7 @@ import {
   PopoverContent,
 } from "@/components/ui/popover";
 
-import { useOrigin } from "@/hooks/useOrigin";
+import useOrigin from "@/hooks/useOrigin";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { toast } from "sonner";
@@ -18,7 +18,7 @@ interface PublishProps {
   initialData: Doc<"documents">;
 }
 
-const Publish = ({ initialData }: PublishProps) => {
+export const Publish = ({ initialData }: PublishProps) => {
   const origin = useOrigin();
   const update = useMutation(api.documents.update);
 
@@ -133,5 +133,3 @@ const Publish = ({ initialData }: PublishProps) => {
     </Popover>
   );
 };
-
-export default Publish;

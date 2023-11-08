@@ -18,7 +18,7 @@ interface CoverImageProps {
   preview?: boolean;
 }
 
-const Cover = ({ url, preview }: CoverImageProps) => {
+export const Cover = ({ url, preview }: CoverImageProps) => {
   const params = useParams();
 
   const { edgestore } = useEdgeStore();
@@ -73,5 +73,3 @@ const Cover = ({ url, preview }: CoverImageProps) => {
 Cover.Skeleton = function CoverSkeleton() {
   return <Skeleton className="h-[36vh] w-full" />;
 };
-
-export default Cover;

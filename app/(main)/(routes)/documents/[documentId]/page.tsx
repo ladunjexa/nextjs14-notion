@@ -2,8 +2,8 @@
 
 import dynamic from "next/dynamic";
 import React, { useMemo } from "react";
-import Cover from "@/components/shared/Cover";
-import Toolbar from "@/components/shared/Toolbar";
+import { Cover } from "@/components/shared/Cover";
+import { Toolbar } from "@/components/shared/Toolbar";
 import { Skeleton } from "@/components/ui/skeleton";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";

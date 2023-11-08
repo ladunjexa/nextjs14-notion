@@ -1,6 +1,6 @@
 "use client";
 
-import ConfirmModal from "@/components/modals/ConfirmModal";
+import { ConfirmModal } from "@/components/modals/ConfirmModal";
 import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
@@ -12,7 +12,7 @@ type BannerProps = {
   documentId: Id<"documents">;
 };
 
-const Banner = ({ documentId }: BannerProps) => {
+export const Banner = ({ documentId }: BannerProps) => {
   const router = useRouter();
   const remove = useMutation(api.documents.remove);
   const restore = useMutation(api.documents.restore);
@@ -62,5 +62,3 @@ const Banner = ({ documentId }: BannerProps) => {
     </div>
   );
 };
-
-export default Banner;

@@ -1,7 +1,7 @@
 "use client";
 
-import ConfirmModal from "@/components/modals/ConfirmModal";
-import Spinner from "@/components/shared/Spinner";
+import { ConfirmModal } from "@/components/modals/ConfirmModal";
+import { Spinner } from "@/components/shared/Spinner";
 import { Input } from "@/components/ui/input";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
@@ -11,7 +11,7 @@ import { useParams, useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { toast } from "sonner";
 
-const TrashBox = () => {
+export const TrashBox = () => {
   const router = useRouter();
   const params = useParams();
   const documents = useQuery(api.documents.getTrash);
@@ -111,5 +111,3 @@ const TrashBox = () => {
     </div>
   );
 };
-
-export default TrashBox;

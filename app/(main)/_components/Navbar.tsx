@@ -6,17 +6,17 @@ import { useParams } from "next/navigation";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
 import { MenuIcon } from "lucide-react";
-import Title from "./Title";
-import Banner from "./Banner";
-import Menu from "./Menu";
-import Publish from "./Publish";
+import { Title } from "./Title";
+import { Banner } from "./Banner";
+import { Menu } from "./Menu";
+import { Publish } from "./Publish";
 
 interface NavbarProps {
   isCollapsed: boolean;
   onResetWidth: () => void;
 }
 
-const Navbar = ({ isCollapsed, onResetWidth }: NavbarProps) => {
+export const Navbar = ({ isCollapsed, onResetWidth }: NavbarProps) => {
   const params = useParams();
 
   const document = useQuery(api.documents.getById, {
@@ -59,5 +59,3 @@ const Navbar = ({ isCollapsed, onResetWidth }: NavbarProps) => {
     </>
   );
 };
-
-export default Navbar;
