@@ -9,9 +9,7 @@ import Link from "next/link";
 import { SignInButton } from "@clerk/clerk-react";
 import Image from "next/image";
 
-type Props = {};
-
-const Heading = (props: Props) => {
+const Heading = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   return (
     <div className="max-w-3xl space-y-4">

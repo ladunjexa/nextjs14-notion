@@ -2,9 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import { Button } from "@/components/ui/button";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div className="z-50 flex w-full items-center bg-background p-6 dark:bg-[#1F1F1F]">
       <Logo />

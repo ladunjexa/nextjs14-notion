@@ -7,9 +7,7 @@ import { Label } from "../ui/label";
 import { useSettings } from "@/hooks/useSettings";
 import { ModeToggle } from "../shared/ModeToggle";
 
-type Props = {};
-
-const SettingsModal = (props: Props) => {
+const SettingsModal = () => {
   const settings = useSettings();
 
   return (

@@ -5,9 +5,7 @@ import { cn } from "@/lib/utils";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"] });
 
-type Props = {};
-
-const Logo = (props: Props) => {
+const Logo = () => {
   return (
     <div className="hidden items-center gap-x-2 md:flex">
       <Image

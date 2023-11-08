@@ -14,9 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-type Props = {};
-
-const UserItem = (props: Props) => {
+const UserItem = () => {
   const { user } = useUser();
 
   return (

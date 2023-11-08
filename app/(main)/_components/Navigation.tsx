@@ -30,9 +30,7 @@ import { useSearch } from "@/hooks/useSearch";
 import { useSettings } from "@/hooks/useSettings";
 import Navbar from "./Navbar";
 
-type Props = {};
-
-const Navigation = (props: Props) => {
+const Navigation = () => {
   const router = useRouter();
   const params = useParams();
   const pathname = usePathname();

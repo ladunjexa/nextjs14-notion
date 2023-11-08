@@ -11,9 +11,7 @@ import { Button } from "@/components/ui/button";
 import Spinner from "@/components/shared/Spinner";
 import Link from "next/link";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   const scrolled = useScrollTop();
   return (

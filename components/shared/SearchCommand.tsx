@@ -17,9 +17,7 @@ import {
 import { api } from "@/convex/_generated/api";
 import { useSearch } from "@/hooks/useSearch";
 
-type Props = {};
-
-const SearchCommand = (props: Props) => {
+const SearchCommand = () => {
   const { user } = useUser();
   const router = useRouter();
   const documents = useQuery(api.documents.getSearch);
