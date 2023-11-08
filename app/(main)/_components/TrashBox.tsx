@@ -41,7 +41,7 @@ const TrashBox = (props: Props) => {
     toast.promise(promise, {
       loading: "Restoring note...",
       success: "Note restored!",
-      error: "Failed to restore none",
+      error: "Failed to restore note",
     });
   };
 
@@ -51,7 +51,7 @@ const TrashBox = (props: Props) => {
     toast.promise(promise, {
       loading: "Deleting note...",
       success: "Note deleted!",
-      error: "Failed to delete none",
+      error: "Failed to delete note",
     });
 
     if (params.documentId === documentId) {
