@@ -10,7 +10,7 @@ import { api } from "@/convex/_generated/api";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
-const Page = () => {
+export default function Documents() {
   const router = useRouter();
   const { user } = useUser();
   const create = useMutation(api.documents.create);
@@ -51,6 +51,4 @@ const Page = () => {
       </Button>
     </div>
   );
-};
-
-export default Page;
+}

@@ -15,7 +15,7 @@ type Props = {
   };
 };
 
-const Page = ({ params: { documentId } }: Props) => {
+export default function Document({ params: { documentId } }: Props) {
   const Editor = useMemo(
     () =>
       dynamic(() => import("@/components/shared/Editor"), {
@@ -65,6 +65,4 @@ const Page = ({ params: { documentId } }: Props) => {
       </div>
     </div>
   );
-};
-
-export default Page;
+}
