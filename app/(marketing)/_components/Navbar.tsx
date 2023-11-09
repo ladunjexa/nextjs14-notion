@@ -6,11 +6,11 @@ import { useConvexAuth } from "convex/react";
 import { SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
 
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "@/components/shared/ModeToggle";
-import { Spinner } from "@/components/shared/Spinner";
-import { Logo } from "./Logo";
+import { ModeToggle } from "@/components/shared/mode-toggle";
+import { Spinner } from "@/components/shared/spinner";
+import { Logo } from "./logo";
 
-import useScrollTop from "@/hooks/useScrollTop";
+import useScrollTop from "@/hooks/use-scroll-top";
 
 import { cn } from "@/lib/utils";
 

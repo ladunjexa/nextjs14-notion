@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
 import { Doc } from "@/convex/_generated/dataModel";
 
-import useOrigin from "@/hooks/useOrigin";
+import useOrigin from "@/hooks/use-origin";
 
 interface PublishProps {
   initialData: Doc<"documents">;

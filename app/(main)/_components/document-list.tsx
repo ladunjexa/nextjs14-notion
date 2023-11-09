@@ -6,7 +6,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useQuery } from "convex/react";
 import { FileIcon } from "lucide-react";
 
-import { Item } from "./Item";
+import { Item } from "./item";
 
 import { api } from "@/convex/_generated/api";
 import { Doc, Id } from "@/convex/_generated/dataModel";

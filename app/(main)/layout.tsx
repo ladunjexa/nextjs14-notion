@@ -5,9 +5,9 @@ import { redirect } from "next/navigation";
 
 import { useConvexAuth } from "convex/react";
 
-import { Navigation } from "./_components/Navigation";
-import { Spinner } from "@/components/shared/Spinner";
-import SearchCommand from "@/components/shared/SearchCommand";
+import { Navigation } from "./_components/navigation";
+import { Spinner } from "@/components/shared/spinner";
+import SearchCommand from "@/components/shared/search-command";
 
 export default function MainLayout({
   children,

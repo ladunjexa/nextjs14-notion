@@ -2,9 +2,9 @@
 
 import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
-import { ModeToggle } from "@/components/shared/ModeToggle";
+import { ModeToggle } from "@/components/shared/mode-toggle";
 
-import { useSettings } from "@/hooks/useSettings";
+import { useSettings } from "@/hooks/use-settings";
 
 export const SettingsModal = () => {
   const settings = useSettings();

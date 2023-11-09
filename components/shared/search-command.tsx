@@ -18,7 +18,7 @@ import {
 
 import { api } from "@/convex/_generated/api";
 
-import { useSearch } from "@/hooks/useSearch";
+import { useSearch } from "@/hooks/use-search";
 
 const SearchCommand = () => {
   const { user } = useUser();

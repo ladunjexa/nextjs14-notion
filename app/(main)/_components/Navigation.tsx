@@ -21,14 +21,14 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { TrashBox } from "./TrashBox";
-import { UserItem } from "./UserItem";
-import { Navbar } from "./Navbar";
-import { Item } from "./Item";
-import { DocumentList } from "./DocumentList";
+import { TrashBox } from "./trash-box";
+import { UserItem } from "./user-item";
+import { Navbar } from "./navbar";
+import { Item } from "./item";
+import { DocumentList } from "./document-list";
 
-import { useSearch } from "@/hooks/useSearch";
-import { useSettings } from "@/hooks/useSettings";
+import { useSearch } from "@/hooks/use-search";
+import { useSettings } from "@/hooks/use-settings";
 
 import { api } from "@/convex/_generated/api";
 

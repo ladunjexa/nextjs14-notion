@@ -6,8 +6,8 @@ import dynamic from "next/dynamic";
 import { useMutation, useQuery } from "convex/react";
 
 import { Skeleton } from "@/components/ui/skeleton";
-import { Cover } from "@/components/shared/Cover";
-import { Toolbar } from "@/components/shared/Toolbar";
+import { Cover } from "@/components/shared/cover";
+import { Toolbar } from "@/components/shared/toolbox";
 
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
@@ -21,7 +21,7 @@ type Props = {
 export default function Preview({ params: { documentId } }: Props) {
   const Editor = useMemo(
     () =>
-      dynamic(() => import("@/components/shared/Editor"), {
+      dynamic(() => import("@/components/shared/editor"), {
         ssr: false,
       }),
     []

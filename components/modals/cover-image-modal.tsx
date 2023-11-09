@@ -6,12 +6,12 @@ import { useParams } from "next/navigation";
 import { useMutation } from "convex/react";
 
 import { Dialog, DialogHeader, DialogContent } from "@/components/ui/dialog";
-import { SingleImageDropzone } from "@/components/shared/SingleImageDropzone";
+import { SingleImageDropzone } from "@/components/shared/single-image-dropzone";
 
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
 
-import { useCoverImage } from "@/hooks/useCoverImage";
+import { useCoverImage } from "@/hooks/use-cover-image";
 
 import { useEdgeStore } from "@/lib/edgestore";
 

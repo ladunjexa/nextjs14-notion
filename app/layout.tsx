@@ -4,9 +4,9 @@ import { Inter } from "next/font/google";
 
 import { Toaster } from "sonner";
 
-import { ThemeProvider } from "@/components/providers/ThemeProvider";
-import { ConvexClientProvider } from "@/components/providers/ConvexProvider";
-import { ModalProvider } from "@/components/providers/ModalProvider";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { ConvexClientProvider } from "@/components/providers/convex-provider";
+import { ModalProvider } from "@/components/providers/modal-provider";
 
 import { EdgeStoreProvider } from "@/lib/edgestore";
 

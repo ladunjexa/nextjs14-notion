@@ -7,12 +7,12 @@ import TextareaAutosize from "react-textarea-autosize";
 import { ImageIcon, Smile, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { IconPicker } from "./IconPicker";
+import { IconPicker } from "./icon-picker";
 
 import { api } from "@/convex/_generated/api";
 import { Doc } from "@/convex/_generated/dataModel";
 
-import { useCoverImage } from "@/hooks/useCoverImage";
+import { useCoverImage } from "@/hooks/use-cover-image";
 
 interface ToolbarProps {
   initialData: Doc<"documents">;

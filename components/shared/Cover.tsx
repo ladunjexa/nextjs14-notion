@@ -12,7 +12,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
 
-import { useCoverImage } from "@/hooks/useCoverImage";
+import { useCoverImage } from "@/hooks/use-cover-image";
 
 import { useEdgeStore } from "@/lib/edgestore";
 
