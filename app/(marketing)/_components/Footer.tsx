@@ -1,4 +1,3 @@
-import React from "react";
 import { Logo } from "./Logo";
 import { Button } from "@/components/ui/button";
 

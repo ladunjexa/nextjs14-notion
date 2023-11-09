@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import React from "react";
 import { useConvexAuth } from "convex/react";
 import { Spinner } from "@/components/shared/Spinner";
 import Link from "next/link";

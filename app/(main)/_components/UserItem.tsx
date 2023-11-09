@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { useUser, SignOutButton } from "@clerk/clerk-react";
 
 import { ChevronsLeftRight } from "lucide-react";

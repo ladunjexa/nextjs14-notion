@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { Dialog, DialogContent, DialogHeader } from "@/components/ui/dialog";
 import { Label } from "../ui/label";
 import { useSettings } from "@/hooks/useSettings";

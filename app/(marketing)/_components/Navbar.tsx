@@ -1,7 +1,6 @@
 "use client";
 
 import useScrollTop from "@/hooks/useScrollTop";
-import React from "react";
 import { cn } from "@/lib/utils";
 import { Logo } from "./Logo";
 import { ModeToggle } from "@/components/shared/ModeToggle";
