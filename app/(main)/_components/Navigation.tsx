@@ -1,6 +1,11 @@
 "use client";
 
 import React, { useRef, ElementRef, useState, useEffect } from "react";
+import { useParams, usePathname, useRouter } from "next/navigation";
+
+import { useMutation } from "convex/react";
+import { useMediaQuery } from "usehooks-ts";
+import { toast } from "sonner";
 import {
   ChevronsLeft,
   MenuIcon,
@@ -11,24 +16,23 @@ import {
   Trash,
 } from "lucide-react";
 
-import { useMediaQuery } from "usehooks-ts";
-import { useParams, usePathname, useRouter } from "next/navigation";
-import { useMutation } from "convex/react";
-import { cn } from "@/lib/utils";
-import { UserItem } from "./UserItem";
-import { api } from "@/convex/_generated/api";
-import { Item } from "./Item";
-import { toast } from "sonner";
-import { DocumentList } from "./DocumentList";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { TrashBox } from "./TrashBox";
+import { UserItem } from "./UserItem";
+import { Navbar } from "./Navbar";
+import { Item } from "./Item";
+import { DocumentList } from "./DocumentList";
+
 import { useSearch } from "@/hooks/useSearch";
 import { useSettings } from "@/hooks/useSettings";
-import { Navbar } from "./Navbar";
+
+import { api } from "@/convex/_generated/api";
+
+import { cn } from "@/lib/utils";
 
 export const Navigation = () => {
   const router = useRouter();

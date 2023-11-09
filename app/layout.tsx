@@ -7,6 +7,7 @@ import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { ConvexClientProvider } from "@/components/providers/ConvexProvider";
 import { ModalProvider } from "@/components/providers/ModalProvider";
+
 import { EdgeStoreProvider } from "@/lib/edgestore";
 
 import "./globals.css";

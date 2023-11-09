@@ -1,16 +1,22 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Button } from "../ui/button";
-import { ImageIcon, X } from "lucide-react";
-import { useCoverImage } from "@/hooks/useCoverImage";
-import { useMutation } from "convex/react";
-import { api } from "@/convex/_generated/api";
 import { useParams } from "next/navigation";
+
+import { useMutation } from "convex/react";
+import { ImageIcon, X } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
+
+import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
+
+import { useCoverImage } from "@/hooks/useCoverImage";
+
 import { useEdgeStore } from "@/lib/edgestore";
-import { Skeleton } from "../ui/skeleton";
+
+import { cn } from "@/lib/utils";
 
 interface CoverImageProps {
   url?: string;

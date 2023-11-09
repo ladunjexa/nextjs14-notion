@@ -1,10 +1,8 @@
 "use client";
 
 import { useUser, SignOutButton } from "@clerk/clerk-react";
-
 import { ChevronsLeftRight } from "lucide-react";
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,6 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 export const UserItem = () => {
   const { user } = useUser();

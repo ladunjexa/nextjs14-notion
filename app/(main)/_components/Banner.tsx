@@ -1,12 +1,16 @@
 "use client";
 
-import { ConfirmModal } from "@/components/modals/ConfirmModal";
+import { useRouter } from "next/navigation";
+
+import { useMutation } from "convex/react";
+import { toast } from "sonner";
+
 import { Button } from "@/components/ui/button";
+import { ConfirmModal } from "@/components/modals/ConfirmModal";
+
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
-import { useMutation } from "convex/react";
-import { useRouter } from "next/navigation";
-import { toast } from "sonner";
+
 type BannerProps = {
   documentId: Id<"documents">;
 };

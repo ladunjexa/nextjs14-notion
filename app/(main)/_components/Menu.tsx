@@ -1,4 +1,10 @@
-import { Id } from "@/convex/_generated/dataModel";
+import { useRouter } from "next/navigation";
+
+import { useMutation } from "convex/react";
+import { useUser } from "@clerk/clerk-react";
+import { toast } from "sonner";
+import { MoreHorizontal, Trash } from "lucide-react";
+
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -6,14 +12,11 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
-import { useRouter } from "next/navigation";
-import { useUser } from "@clerk/clerk-react";
-import { useMutation } from "convex/react";
-import { api } from "@/convex/_generated/api";
-import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
-import { MoreHorizontal, Trash } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
+
+import { api } from "@/convex/_generated/api";
+import { Id } from "@/convex/_generated/dataModel";
 
 interface MenuProps {
   documentId: Id<"documents">;

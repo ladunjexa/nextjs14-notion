@@ -1,10 +1,12 @@
 "use client";
 
 import React from "react";
-import { useConvexAuth } from "convex/react";
-import { Spinner } from "@/components/shared/Spinner";
 import { redirect } from "next/navigation";
+
+import { useConvexAuth } from "convex/react";
+
 import { Navigation } from "./_components/Navigation";
+import { Spinner } from "@/components/shared/Spinner";
 import SearchCommand from "@/components/shared/SearchCommand";
 
 export default function MainLayout({

@@ -1,14 +1,19 @@
 "use client";
 
-import { Dialog, DialogHeader, DialogContent } from "../ui/dialog";
-import { useCoverImage } from "@/hooks/useCoverImage";
-import { SingleImageDropzone } from "../shared/SingleImageDropzone";
 import { useState } from "react";
-import { useEdgeStore } from "@/lib/edgestore";
-import { useMutation } from "convex/react";
-import { api } from "@/convex/_generated/api";
 import { useParams } from "next/navigation";
+
+import { useMutation } from "convex/react";
+
+import { Dialog, DialogHeader, DialogContent } from "@/components/ui/dialog";
+import { SingleImageDropzone } from "@/components/shared/SingleImageDropzone";
+
+import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
+
+import { useCoverImage } from "@/hooks/useCoverImage";
+
+import { useEdgeStore } from "@/lib/edgestore";
 
 export const CoverImageModal = () => {
   const params = useParams();
