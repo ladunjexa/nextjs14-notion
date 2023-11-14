@@ -25,7 +25,7 @@ Explore the live demonstration of the project: [nextjs14-notion](https://nextjs1
 
 ## 📝 Description
 
-**SnapShot** is a modern social app with a stunning UI with a native mobile feel, a special tech stack, an infinite scroll feature, and amazing performance using React JS, Appwrite, TypeScript, and more.
+**Notion** is a Notion-like application built with Next.js 14, React, Convex, Tailwind, Clerk, and EdgeStore. It is a real-time database and Notion-style editor that allows you to create, edit, and delete documents. It also allows you to publish your note to the web.
 
 <details><summary><b>Folder Structure</b></summary>
 
