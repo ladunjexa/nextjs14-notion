@@ -29,7 +29,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "lucide-react": "^0.292.0",
+    "lucide-react": "^0.331.0",
     "next": "14.0.1",
     "next-themes": "^0.2.1",
     "prettier": "^3.0.3",
