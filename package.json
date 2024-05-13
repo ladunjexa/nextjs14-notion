@@ -30,7 +30,7 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-tailwindcss": "^3.14.3",
     "lucide-react": "^0.331.0",
-    "next": "14.1.0",
+    "next": "14.1.1",
     "next-themes": "^0.2.1",
     "prettier": "^3.0.3",
     "react": "^18",
